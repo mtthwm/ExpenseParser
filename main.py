@@ -6,18 +6,6 @@ import re
 
 from parsercsv import *
 
-class Transaction:
-    def __init__(self, amount: float, date: date, memo: str, description: str, category: str, tag: str):
-        self.amount = amount
-        self.date = date
-        self.memo = memo
-        self.description = description
-        self.category = category
-        self.tag = tag
-
-    def __str__(self):
-        return f"Transaction: \nAmount: {self.amount}\nDescription: {self.description}\nCategory: {self.category}\nDate: {self.date}\nMemo: {self.memo}\nTag: {self.tag}"
-
 class TransactionApp(QMainWindow):
     def __init__(self):
         super().__init__()
